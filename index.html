@@ -2,98 +2,69 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>16 sept 21h</title>
+<title>21h live</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:system-ui;background:#07090c;color:#f2f5f8}
-.top{position:sticky;top:0;background:#05070a;padding:8px;z-index:9;border-bottom:1px solid #243041}
-.tabs{display:flex;gap:4px;overflow-x:auto}
-.tab{border:1px solid #243041;background:0;color:#8b9bb4;font-weight:800;font-size:11px;padding:6px 9px;border-radius:99px;white-space:nowrap}
+.top{position:sticky;top:0;background:#05070a;padding:8px;border-bottom:1px solid #243041}
+.tab{border:1px solid #243041;background:0;color:#8b9bb4;font-weight:800;font-size:11px;padding:6px 9px;border-radius:99px;margin-right:3px}
 .tab.on{background:#00d4aa;color:#06110e}
 .w{max-width:760px;margin:0 auto;padding:12px}
 .k{color:#fbbf24;font-size:10px;font-weight:800}
 h1{font-size:22px;margin:4px 0 10px}
-.c{background:#141c26;border:1px solid #243041;border-radius:14px;padding:12px;margin:0 0 8px}
-.c.live{border-color:#ef4444}
-.match{font-size:12px;color:#8b9bb4;font-weight:800;margin-bottom:6px}
-.l{padding:6px 0;border-top:1px solid #1c2633}
-.lab{font-size:9px;font-weight:800;color:#fbbf24}
-.nm{font-size:16px;font-weight:900}
-.st{font-size:12px;color:#8b9bb4;line-height:1.4}
-.h{color:#00d4aa;font-weight:900;margin-top:6px}
-.red{color:#ef4444}
+.c{background:#141c26;border:1px solid #243041;border-radius:14px;padding:11px;margin:0 0 8px}
+.match{font-size:11px;color:#8b9bb4;font-weight:800}
+.nm{font-size:16px;font-weight:900;margin-top:4px}
+.st{font-size:12px;color:#8b9bb4;line-height:1.35;margin-top:3px}
+.h{color:#00d4aa;font-weight:900;margin-top:5px}
 .sec{display:none}.sec.on{display:block}
-.xi{font-size:11px;color:#8b9bb4;margin-top:4px}
 </style></head>
 <body>
-<div class="top"><div class="tabs">
-<button class="tab on" data-s="now">21h XI</button>
-<button class="tab" data-s="liga">Liga</button>
-<button class="tab" data-s="plus">Nuit / plus</button>
-</div></div>
+<div class="top">
+<button class="tab on" data-s="a">C3 XI</button>
+<button class="tab" data-s="b">Cup XI</button>
+<button class="tab" data-s="c">Liga 21h30</button>
+</div>
 <main class="w">
-<section class="sec on" id="now">
-<div class="k">20H58 · XI CONFIRMÉS OÙ ON LES A</div>
-<h1>Creusé</h1>
-
-<div class="c">
-<div class="match">GRAZ — RENNES · C3 · XI RENNES CONFIRMÉ</div>
-<div class="l"><div class="lab">L1 BUTEUR</div><div class="nm">Lepaul</div><div class="st">9 titulaire. Al-Tamari + Blas ailes. Mayenda / Dia banc.</div></div>
-<div class="l"><div class="lab">L2 PASSEUR</div><div class="nm">Blas / Szymański</div></div>
-<div class="xi">Samba — Reynolds, Cresswell, Rouault, Nagida — Camara, Thomasson, Szymański — Blas, Al-Tamari, Lepaul. Rongier repos. Frankowski out. Terrier/Doué/Assignon blessés.</div>
-<div class="xi">Graz type : Beganovic + Mamageishvili.</div>
-<div class="h">21h00</div>
-</div>
-
-<div class="c">
-<div class="match">UNITED — BRIGHTON · CUP · XI CONFIRMÉ</div>
-<div class="l"><div class="lab">L1 BUTEUR</div><div class="nm">Sesko + Rashford</div><div class="st">Bruno / Cunha / Mbeumo / Zirkzee BANC. Amad blessé.</div></div>
-<div class="l"><div class="lab">L2 PASSEUR</div><div class="nm">Mount / Tielemans (cap.)</div></div>
-<div class="xi">Darlow — Dalot Yoro Heaven Mazraoui — Santos Tielemans Lacey — Mount Rashford Sesko.</div>
-<div class="xi">Brighton : Kostoulas 9 · O’Riley · Gross cap. Mitoma/Ferguson/Minteh out.</div>
-<div class="h">21h00</div>
-</div>
-
-<div class="c">
-<div class="match">MILAN — BENFICA · C3</div>
-<div class="l"><div class="lab">L1</div><div class="nm">Ramos · Pavlidis (8 buts Liga PT)</div></div>
-<div class="l"><div class="lab">L2</div><div class="nm">Pulisic · Rafa / Prestianni</div></div>
-<div class="xi">Milan type Amorim : Maignan — Gila Gabbia Pavlovic — Chukwueze Musah Rabiot Moreira — Pulisic Cissé — Ramos.</div>
-<div class="h">21h00</div>
-</div>
-
-<div class="c">
-<div class="match">ANDERLECHT — LYON · C3</div>
-<div class="l"><div class="lab">L1</div><div class="nm">Openda</div></div>
-<div class="l"><div class="lab">L2</div><div class="nm">Sulc / Tolisso · Nuamah</div></div>
-<div class="xi">Lyon type : Greif — Athekame Bacher Niakhate Abner — Bidstrup Morton — Nuamah Sulc Tolisso — Openda. Cherki PAS dans ce 11. Duranville out.</div>
-<div class="xi">Anderlecht : Sikan + Bentayeb + Antman.</div>
-<div class="h">21h00</div>
-</div>
-
-<div class="c">
-<div class="match">AUTRES C3 21h</div>
-<div class="st">Leverkusen–Celje · Sunderland–AZ · Olympiacos–Jagiellonia · Beer-Sheva–Dinamo Zagreb · Coventry–Villa (Watkins si titulaire).</div>
-</div>
+<section class="sec on" id="a">
+<div class="k">21H · XI SKY / OUEST-FRANCE</div>
+<h1>Encore creusé</h1>
+<div class="c"><div class="match">LEVERKUSEN — CELJE</div>
+<div class="nm">Schick + Diaby + Terrier</div>
+<div class="st">Flekken — Vazquez Bade Tapsoba Medina — Andrich Aleix García — Diaby Tillman Terrier — Schick. Banc : Moreira, Seghir, Kofane.</div>
+<div class="st">Celje 9 : Kucys · Dukuly · Verbic.</div><div class="h">21h</div></div>
+<div class="c"><div class="match">SUNDERLAND — AZ</div>
+<div class="nm">Isidor titulaire · Brobbey BANC · Fofana + Le Fée</div>
+<div class="st">Roefs — Mukiele Danso Alderete Reinildo — Xhaka Sadiki Hume — Le Fée Fofana — Isidor.</div>
+<div class="st">AZ : Meerdink + Daal (5 buts club) + Smit. Stengs banc.</div><div class="h">21h</div></div>
+<div class="c"><div class="match">MILAN — BENFICA</div>
+<div class="nm">Ramos · Pavlidis 8B Liga PT</div>
+<div class="st">Pulisic / Cissé / Chukwueze · Rafa Prestianni Schjelderup</div><div class="h">21h</div></div>
+<div class="c"><div class="match">ANDERLECHT — LYON</div>
+<div class="nm">Openda · Sulc Tolisso Nuamah</div>
+<div class="st">Cherki pas dans le 11 type. Sikan Antman Anderlecht.</div><div class="h">21h</div></div>
+<div class="c"><div class="match">GRAZ — RENNES XI OFFICIEL</div>
+<div class="nm">Lepaul + Blas + Al-Tamari</div>
+<div class="st">Samba — Reynolds Cresswell Rouault Nagida — Camara Thomasson Szymański — Blas Al-Tamari Lepaul. Rongier repos. Dia/Mayenda banc.</div><div class="h">21h</div></div>
+<div class="c"><div class="match">OLYMPIACOS — JAGIELLONIA · BEER-SHEVA — DINAMO</div><div class="st">Aussi 21h</div></div>
 </section>
-
-<section class="sec" id="liga">
-<div class="c live"><div class="match">ATLÉTICO — OSASUNA</div><div class="nm red">4-0 fin de match</div><div class="st">David · Kang-In Lee · Le Normand. Alvarez pas titulaire.</div></div>
-<div class="c">
-<div class="match">BARÇA — RACING 21h30</div>
-<div class="l"><div class="lab">L1 DISSETTE</div><div class="nm">Raphinha 6B 3P</div><div class="st">Pas buteur Levante (Yamal doublé 19’+péna).</div></div>
-<div class="l"><div class="lab">L2 PASSEUR</div><div class="nm">Gordon n°17 · 4P 0B</div></div>
-<div class="xi">Aussi : Yamal 6B · Fermín 4B · Adeyemi 2B · Olmo 2P · Jesus. Racing Zabiri 5B · Vicente 2P.</div>
-</div>
+<section class="sec" id="b">
+<div class="c"><div class="match">UNITED — BRIGHTON XI OFFICIEL</div>
+<div class="nm">Sesko + Rashford</div>
+<div class="st">Darlow Dalot Yoro Heaven Mazraoui — Santos Tielemans Lacey — Mount Rashford Sesko. Banc : Bruno Cunha Mbeumo Zirkzee. Amad out.</div>
+<div class="st">Brighton 9 : Kostoulas. Mitoma Ferguson Minteh out.</div><div class="h">21h</div></div>
+<div class="c"><div class="match">COVENTRY — VILLA XI OFFICIEL</div>
+<div class="nm">Abraham titulaire · Watkins NON · Garnacho/Jackson BANC</div>
+<div class="st">Villa : Bizot — AWB Harwood-Bellis Mings Ruggeri — Bogarde Barkley McGinn — Mbaye Abraham Hemmings.</div>
+<div class="st">Coventry 9 : Chérif. Hamer Gboho Sakamoto.</div><div class="h">21h</div></div>
+<div class="c"><div class="match">EVERTON — WOLVES</div><div class="st">20h45 déjà lancé. Grealish cité dans le groupe Everton.</div></div>
+</section>
+<section class="sec" id="c">
+<div class="c"><div class="match">ATLÉTICO — OSASUNA</div><div class="nm">4-0 David + Lee + Le Normand</div><div class="st">Alvarez pas titulaire.</div></div>
+<div class="c"><div class="match">BARÇA — RACING 21h30</div>
+<div class="nm">L1 Raphinha (pas buteur Levante) · L2 Gordon 4P 0B</div>
+<div class="st">Yamal 6B déjà doublé dim. Fermín 4B. Adeyemi 2B. Racing Zabiri 5B.</div></div>
 <div class="c"><div class="match">LEVANTE — ATHLETIC 21h30</div><div class="st">Brugué a marqué dim. Williams 2P Athletic.</div></div>
-</section>
-
-<section class="sec" id="plus">
-<div class="c"><div class="nm">00h LDU–Palmeiras · 02h30 Corinthians–Estudiantes</div></div>
-<div class="c"><div class="nm">Jeu 17 City–Norwich</div><div class="st">Haaland buteur dim. vs United. Cup = rotation possible.</div></div>
-<div class="c"><div class="nm">Ven 18 Monaco–Lens 20h45 · Dim 20 OM–PSG</div></div>
-<div class="c"><div class="nm">Lewandowski = Chicago Fire</div><div class="st">Nashville dim ~03h30. Plus Barça.</div></div>
-<div class="c"><div class="nm">NHL rien ce soir</div><div class="st">Présaison sam 19.</div></div>
 </section>
 </main>
 <script>
