@@ -4,56 +4,81 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>16 sept</title>
 <style>
-:root{--bg:#07090c;--c:#141c26;--a:#00d4aa;--g:#fbbf24;--t:#f2f5f8;--m:#8b9bb4;--b:#243041}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:system-ui;background:var(--bg);color:var(--t)}
-.top{position:sticky;top:0;background:#05070a;padding:8px;border-bottom:1px solid var(--b)}
-.tabs{display:flex;gap:4px;overflow-x:auto}
-.tab{border:1px solid var(--b);background:0;color:var(--m);font-weight:800;font-size:12px;padding:6px 10px;border-radius:99px;white-space:nowrap}
-.tab.on{background:var(--a);color:#06110e}
+body{font-family:system-ui;background:#07090c;color:#f2f5f8}
+.top{position:sticky;top:0;background:#05070a;padding:8px;border-bottom:1px solid #243041}
+.tab{border:1px solid #243041;background:0;color:#8b9bb4;font-weight:800;font-size:12px;padding:6px 10px;border-radius:99px;margin-right:4px}
+.tab.on{background:#00d4aa;color:#06110e}
 .w{max-width:720px;margin:0 auto;padding:14px}
-.k{color:var(--g);font-size:11px;font-weight:800}
-h1{font-size:24px;margin:4px 0 12px}
-.card{background:var(--c);border:1px solid var(--b);border-radius:14px;padding:12px;margin:0 0 8px}
-.n{font-size:18px;font-weight:900}.s{font-size:14px;margin-top:3px}
-.h{color:var(--a);font-weight:900;margin-top:6px}.why{color:var(--m);font-size:12px;margin-top:3px}
-.bg{display:inline-block;background:var(--a);color:#06110e;font-size:10px;font-weight:900;padding:2px 7px;border-radius:99px}
-.sec{display:none}.sec.on{display:block}.ll{color:var(--g);font-size:12px;font-weight:800;margin:14px 0 6px}
+.k{color:#fbbf24;font-size:11px;font-weight:800}
+h1{font-size:22px;margin:6px 0 12px}
+.c{background:#141c26;border:1px solid #243041;border-radius:14px;padding:12px;margin:0 0 10px}
+.match{font-size:13px;color:#8b9bb4;font-weight:800;margin-bottom:8px}
+.l1,.l2{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:6px 0}
+.l1{border-bottom:1px solid #243041}
+.lab{font-size:10px;font-weight:800;color:#fbbf24;letter-spacing:.06em}
+.nm{font-size:17px;font-weight:900}
+.st{font-size:12px;color:#8b9bb4}
+.h{color:#00d4aa;font-weight:900;margin-top:8px}
+.sec{display:none}.sec.on{display:block}
+.note{font-size:12px;color:#8b9bb4;margin-top:8px}
 </style></head>
 <body>
-<div class="top"><div class="tabs">
-<button class="tab on" data-s="p">Je prends</button>
-<button class="tab" data-s="f">Foot tous</button>
+<div class="top">
+<button class="tab on" data-s="p">2 lignes</button>
+<button class="tab" data-s="f">Tous</button>
 <button class="tab" data-s="hok">Hockey</button>
-<button class="tab" data-s="w">Plus tard</button>
-</div></div>
+</div>
 <main class="w">
 <section class="sec on" id="p">
-<div class="k">16 SEPT · DERNIER MATCH VÉRIFIÉ</div>
-<h1>Ce soir je prends</h1>
-<div class="card"><div class="n">Raphinha / Gordon</div><span class="bg">BUT</span>
-<div class="s">Barcelona — Racing · 21h30</div>
-<div class="why">Yamal a déjà doublé dimanche à Levante (19’ + péna 48’). Pas le ticket « il n’a pas marqué ». Adeyemi aussi buteur (90+3). Raphinha a délivré, Gordon dans le 11 pressenti.</div>
-<div class="h">21h30</div></div>
-<div class="card"><div class="n">Milan</div><span class="bg">BUT</span><div class="s">Milan — Benfica · C3</div><div class="h">21h00</div></div>
-<div class="card"><div class="n">Lyon</div><span class="bg">BUT</span><div class="s">Anderlecht — Lyon · C3</div><div class="h">21h00</div></div>
-<div class="card"><div class="n">Álvarez</div><span class="bg">BUT</span><div class="s">Atlético — Osasuna</div><div class="h">19h–20h</div></div>
-<div class="card"><div class="n">United / Rennes</div><span class="bg">BUT</span><div class="s">Cup 21h · Graz–Rennes C3 21h</div></div>
+<div class="k">LIGNE 1 = BUTEUR QUI N’A PAS MARQUÉ RÉCEMMENT · LIGNE 2 = TOP PASSEUR DU CLUB</div>
+<h1>Ce soir</h1>
+
+<div class="c">
+<div class="match">BARCELONA — RACING · Liga</div>
+<div class="l1"><div><div class="lab">BUTEUR · DISSETTE</div><div class="nm">Raphinha</div><div class="st">6 buts Liga · pas buteur à Levante (passeur) · Yamal a doublé</div></div></div>
+<div class="l2"><div><div class="lab">TOP PASSEUR CLUB</div><div class="nm">Anthony Gordon</div><div class="st">4 passes · 1er Liga · 0 but · n°17 effectif Flashscore</div></div></div>
+<div class="h">21h30</div>
+</div>
+
+<div class="c">
+<div class="match">ATLÉTICO — OSASUNA · Liga</div>
+<div class="l1"><div><div class="lab">BUTEUR · DISSETTE</div><div class="nm">Giuliano / Simeone</div><div class="st">moins de buts que Baena (3) · à confirmer compos</div></div></div>
+<div class="l2"><div><div class="lab">TOP PASSEUR CLUB</div><div class="nm">Hancko</div><div class="st">2 passes Liga · devant Giuliano / Lee / Grimaldo</div></div></div>
+<div class="h">19h–20h</div>
+</div>
+
+<div class="c">
+<div class="match">DEPORTIVO — SEVILLA · Liga</div>
+<div class="l1"><div><div class="lab">BUTEUR · DISSETTE</div><div class="nm">à vérif dernier match</div><div class="st">Aubameyang 5 buts — seulement s’il n’a pas marqué le dernier</div></div></div>
+<div class="l2"><div><div class="lab">TOP PASSEUR CLUB</div><div class="nm">Aubameyang</div><div class="st">2 passes Depor</div></div></div>
+<div class="h">19h–20h</div>
+</div>
+
+<div class="c">
+<div class="match">LEVANTE — ATHLETIC · Liga</div>
+<div class="l1"><div><div class="lab">BUTEUR · DISSETTE</div><div class="nm">pas Brugué</div><div class="st">Brugué a marqué dimanche vs Barça</div></div></div>
+<div class="l2"><div><div class="lab">TOP PASSEUR CLUB</div><div class="nm">Williams (Athletic)</div><div class="st">2 passes Liga</div></div></div>
+<div class="h">21h30</div>
+</div>
+
+<div class="c">
+<div class="match">ANDERLECHT — LYON · C3</div>
+<div class="l1"><div><div class="lab">BUTEUR · DISSETTE</div><div class="nm">Fofana / Mikautadze</div><div class="st">C3 : vérif compos 20h</div></div></div>
+<div class="l2"><div><div class="lab">TOP PASSEUR CLUB</div><div class="nm">Cherki (si titulaire)</div></div></div>
+<div class="h">21h00</div>
+</div>
+
+<p class="note">Yamal hors ligne 1 : 2 buts dimanche. Gordon = passeur Barça, pas buteur.</p>
 </section>
+
 <section class="sec" id="f">
-<div class="ll">Liga</div>
-<div class="card"><div class="n">Atlético–Osasuna 19–20h · Depor–Sevilla · Barça–Racing 21h30 · Levante–Athletic 21h30</div></div>
-<div class="ll">C3 21h</div>
-<div class="card"><div class="n">Milan–Benfica · Anderlecht–Lyon · Leverkusen–Celje · Graz–Rennes · Sunderland–AZ · Olympiacos–Jagiellonia</div></div>
-<div class="ll">Cup</div>
-<div class="card"><div class="n">Everton–Wolves 20h45 · United–Brighton 21h · Coventry–Villa 21h</div></div>
+<div class="c"><div class="nm">C3 21h</div><div class="st">Milan–Benfica · Leverkusen–Celje · Graz–Rennes · Sunderland–AZ · Olympiacos–Jagiellonia</div></div>
+<div class="c"><div class="nm">Cup</div><div class="st">Everton–Wolves 20h45 · United–Brighton 21h · Coventry–Villa 21h</div></div>
 </section>
 <section class="sec" id="hok">
-<div class="card"><div class="n">KHL</div><div class="s">Sibir–Neftekhimik 14h30 · Salavat–Ak Bars 16h · Magnitka–Spartak 16h · Lada–Barys 17h · Sotchi–CSKA 18h30</div></div>
-<div class="card"><div class="n">NHL : rien aujourd’hui</div></div>
-</section>
-<section class="sec" id="w">
-<div class="card"><div class="n">Ven Monaco–Lens 20h45 · Dim OM–PSG 20h45</div></div>
+<div class="c"><div class="nm">KHL</div><div class="st">Sibir 14h30 · Salavat–Ak Bars 16h · Magnitka–Spartak 16h · Sotchi–CSKA 18h30</div></div>
+<div class="c"><div class="nm">NHL : rien aujourd’hui</div></div>
 </section>
 </main>
 <script>
