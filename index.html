@@ -2,25 +2,111 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>notes</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>16 sept</title>
 <style>
-body{font-family:system-ui;background:#07090c;color:#f2f5f8;margin:0;padding:16px}
-.k{color:#fbbf24;font-size:12px;font-weight:800}
-h1{font-size:26px;margin:.2rem 0 .8rem}
-.c{background:#141c26;border:1px solid #243041;border-radius:14px;padding:14px;margin:0 0 10px}
-.n{font-size:20px;font-weight:900}
-.m{font-size:15px;margin-top:4px}
-.h{color:#00d4aa;font-weight:900;margin-top:6px;font-size:18px}
-.b{display:inline-block;margin-top:4px;background:#00d4aa;color:#06110e;font-size:11px;font-weight:900;padding:3px 8px;border-radius:99px}
+:root{--bg:#07090c;--c:#141c26;--a:#00d4aa;--g:#fbbf24;--t:#f2f5f8;--m:#8b9bb4;--b:#243041}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui;background:var(--bg);color:var(--t)}
+.top{position:sticky;top:0;background:#05070a;padding:8px;border-bottom:1px solid var(--b);z-index:9}
+.tabs{display:flex;gap:4px;overflow-x:auto}
+.tab{border:1px solid var(--b);background:0;color:var(--m);font-weight:800;font-size:12px;padding:6px 10px;border-radius:99px;white-space:nowrap}
+.tab.on{background:var(--a);color:#06110e;border-color:var(--a)}
+.w{max-width:720px;margin:0 auto;padding:14px}
+.k{color:var(--g);font-size:11px;font-weight:800;letter-spacing:.06em}
+h1{font-size:24px;margin:4px 0 12px}
+.card{background:var(--c);border:1px solid var(--b);border-radius:14px;padding:12px;margin:0 0 8px}
+.n{font-size:18px;font-weight:900}
+.s{font-size:14px;margin-top:3px}
+.h{color:var(--a);font-weight:900;margin-top:6px}
+.why{color:var(--m);font-size:12px;margin-top:3px}
+.bg{display:inline-block;background:var(--a);color:#06110e;font-size:10px;font-weight:900;padding:2px 7px;border-radius:99px}
+.sec{display:none}.sec.on{display:block}
+.ll{color:var(--g);font-size:12px;font-weight:800;margin:14px 0 6px}
+a{color:var(--a)}
 </style></head>
 <body>
-<div class="k">MERCREDI 16 SEPT</div>
+<div class="top"><div class="tabs">
+<button class="tab on" data-s="p">Je prends</button>
+<button class="tab" data-s="f">Foot tous</button>
+<button class="tab" data-s="hok">Hockey</button>
+<button class="tab" data-s="w">Plus tard</button>
+</div></div>
+<main class="w">
+
+<section class="sec on" id="p">
+<div class="k">MERCREDI 16 SEPT · COMPOS FLASHSCORE</div>
 <h1>Ce soir je prends</h1>
-<div class="c"><div class="n">Lewandowski / Barça</div><span class="b">BUT</span><div class="m">Barcelona — Racing</div><div class="h">21h30</div></div>
-<div class="c"><div class="n">Milan</div><span class="b">BUT</span><div class="m">Milan — Benfica · C3</div><div class="h">21h00</div></div>
-<div class="c"><div class="n">Lyon</div><span class="b">BUT</span><div class="m">Anderlecht — Lyon · C3</div><div class="h">21h00</div></div>
-<div class="c"><div class="n">Álvarez / Atlético</div><span class="b">BUT</span><div class="m">Atlético — Osasuna</div><div class="h">19h–20h</div></div>
-<div class="c"><div class="n">United</div><span class="b">BUT</span><div class="m">United — Brighton · Cup</div><div class="h">21h00</div></div>
-<div class="c"><div class="n">Rennes</div><span class="b">BUT</span><div class="m">Graz — Rennes · C3</div><div class="h">21h00</div></div>
+<div class="card"><div class="n">Yamal / Raphinha</div><span class="bg">BUT</span>
+<div class="s">Barcelona — Racing Santander · Liga</div>
+<div class="why">Lewandowski n’est plus au Barça (Chicago Fire depuis juil. 2026). Compo pressentie : Yamal + Raphinha + Gordon. Jesus / Adeyemi banc.</div>
+<div class="h">21h30</div></div>
+<div class="card"><div class="n">Attaque Milan</div><span class="bg">BUT</span>
+<div class="s">Milan — Benfica · Europa League</div>
+<div class="h">21h00</div></div>
+<div class="card"><div class="n">Lyon</div><span class="bg">BUT</span>
+<div class="s">Anderlecht — Lyon · Europa League</div>
+<div class="h">21h00</div></div>
+<div class="card"><div class="n">Álvarez / Atlético</div><span class="bg">BUT</span>
+<div class="s">Atlético — Osasuna · Liga</div>
+<div class="h">19h–20h</div></div>
+<div class="card"><div class="n">United</div><span class="bg">BUT</span>
+<div class="s">Man Utd — Brighton · League Cup</div>
+<div class="h">21h00</div></div>
+<div class="card"><div class="n">Rennes</div><span class="bg">BUT</span>
+<div class="s">Sturm Graz — Rennes · Europa League</div>
+<div class="h">21h00</div></div>
+<p class="why">Compos officielles ~1h avant. <a href="https://www.flashscore.fr" target="_blank">Flashscore</a></p>
+</section>
+
+<section class="sec" id="f">
+<h1>Tout le foot aujourd’hui</h1>
+<div class="ll">Liga</div>
+<div class="card"><div class="n">Atlético — Osasuna</div><div class="h">19h / 20h</div></div>
+<div class="card"><div class="n">Deportivo — Sevilla</div><div class="h">19h / 20h</div></div>
+<div class="card"><div class="n">Barcelona — Racing</div><div class="h">21h30</div></div>
+<div class="card"><div class="n">Levante — Athletic</div><div class="h">21h30</div></div>
+<div class="ll">Europa League 21h</div>
+<div class="card"><div class="n">Milan — Benfica</div></div>
+<div class="card"><div class="n">Anderlecht — Lyon</div></div>
+<div class="card"><div class="n">Leverkusen — Celje</div></div>
+<div class="card"><div class="n">Sturm Graz — Rennes</div></div>
+<div class="card"><div class="n">Sunderland — AZ</div></div>
+<div class="card"><div class="n">Olympiacos — Jagiellonia</div></div>
+<div class="card"><div class="n">Beer-Sheva — Dinamo Zagreb</div></div>
+<div class="ll">League Cup</div>
+<div class="card"><div class="n">Everton — Wolves</div><div class="h">20h45</div></div>
+<div class="card"><div class="n">Man Utd — Brighton</div><div class="h">21h00</div></div>
+<div class="card"><div class="n">Coventry — Aston Villa</div><div class="h">21h00</div></div>
+<div class="ll">Libertadores (nuit)</div>
+<div class="card"><div class="n">LDU Quito — Palmeiras</div><div class="h">00h00</div></div>
+<div class="card"><div class="n">Corinthians — Estudiantes</div><div class="h">02h30</div></div>
+</section>
+
+<section class="sec" id="hok">
+<h1>Hockey</h1>
+<div class="ll">KHL aujourd’hui (heure Paris)</div>
+<div class="card"><div class="n">Sibir — Neftekhimik</div><div class="h">14h30</div></div>
+<div class="card"><div class="n">Salavat — Ak Bars</div><div class="why">Derby vert</div><div class="h">16h00</div></div>
+<div class="card"><div class="n">Magnitogorsk — Spartak</div><div class="h">16h00</div></div>
+<div class="card"><div class="n">Lada — Barys</div><div class="h">17h00</div></div>
+<div class="card"><div class="n">Sochi — CSKA</div><div class="h">18h30</div></div>
+<div class="ll">NHL</div>
+<div class="card"><div class="n">Pas de match NHL ce mercredi</div><div class="why">Présaison à partir de samedi 19 (Dallas–St. Louis, Montréal–Toronto…)</div></div>
+</section>
+
+<section class="sec" id="w">
+<h1>Ensuite</h1>
+<div class="card"><div class="n">Ven 18 Monaco — Lens</div><div class="h">20h45 L1</div></div>
+<div class="card"><div class="n">Dim 20 OM — PSG</div><div class="h">20h45</div></div>
+<div class="card"><div class="n">Lewandowski (Chicago Fire)</div><div class="s">Nashville — Chicago · MLS</div><div class="h">dim. 20 · ~03h30</div></div>
+</section>
+</main>
+<script>
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
+document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));
+document.querySelectorAll('.sec').forEach(x=>x.classList.remove('on'));
+t.classList.add('on');document.getElementById(t.dataset.s).classList.add('on');
+});
+</script>
 </body></html>
