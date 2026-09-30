@@ -1,64 +1,78 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>22 sept</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>30 sept</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:system-ui;background:#07090c;color:#f2f5f8}
 .top{position:sticky;top:0;background:#05070a;padding:8px;border-bottom:1px solid #243041;z-index:9}
-.tab{border:1px solid #243041;background:0;color:#8b9bb4;font-weight:800;font-size:11px;padding:6px 9px;border-radius:99px;margin-right:3px}
+.tabs{display:flex;gap:4px;overflow-x:auto}
+.tab{border:1px solid #243041;background:0;color:#8b9bb4;font-weight:800;font-size:11px;padding:6px 10px;border-radius:99px;white-space:nowrap}
 .tab.on{background:#00d4aa;color:#06110e}
-.w{max-width:760px;margin:0 auto;padding:12px}
-.k{color:#fbbf24;font-size:10px;font-weight:800}
-h1{font-size:22px;margin:4px 0 10px}
+.w{max-width:760px;margin:0 auto;padding:14px}
+.k{color:#fbbf24;font-size:10px;font-weight:800;letter-spacing:.04em}
+h1{font-size:24px;margin:6px 0 12px}
 .c{background:#141c26;border:1px solid #243041;border-radius:14px;padding:12px;margin:0 0 8px}
 .nm{font-size:17px;font-weight:900}
 .st{font-size:13px;color:#8b9bb4;margin-top:4px;line-height:1.4}
 .h{color:#00d4aa;font-weight:900;margin-top:6px}
 .sec{display:none}.sec.on{display:block}
+a{color:#00d4aa}
 </style></head>
 <body>
-<div class="top">
+<div class="top"><div class="tabs">
 <button class="tab on" data-s="a">Ce soir</button>
-<button class="tab" data-s="b">Hockey</button>
-<button class="tab" data-s="c">Week-end</button>
+<button class="tab" data-s="b">Sélections</button>
+<button class="tab" data-s="c">Clubs</button>
 <button class="tab" data-s="d">Ensuite</button>
-</div>
+</div></div>
 <main class="w">
 <section class="sec on" id="a">
-<div class="k">MARDI 22 SEPT 20H16 · PAS DE C1 / C3 HOMMES</div>
+<div class="k">MERCREDI 30 SEPT 2026 · SITE RELANCÉ</div>
 <h1>Ce soir</h1>
-<div class="c"><div class="nm">Pas de Ligue des champions hommes</div><div class="st">Prochaine C1 hommes : 13–14 octobre. Ce mardi = C1 féminine + EFL Trophy + Copa Chile + NHL.</div></div>
-<div class="c"><div class="nm">Real Madrid F — PSG F</div><div class="st">C1 féminine 21h. Juve F — Benfica F 21h. Arsenal F — Køge ~20h. Bayern F 2-1 City F (Gwinn, CSC Casparij, Mead).</div><div class="h">21h00</div></div>
-<div class="c"><div class="nm">Copa Chile nuit</div><div class="st">Audax Italiano — Colo Colo ~01h30 · Cobreloa — Coquimbo ~01h30 · Puerto Montt — Ñublense ~23h.</div></div>
-<div class="c"><div class="nm">Colombie</div><div class="st">Medellín — Jaguares · plus tard Santa Fe — Cali.</div></div>
-<div class="c"><div class="nm">EFL Trophy ~20h45 UK</div><div class="st">Wigan–Blackpool, York–Rotherham, Bradford–Newcastle U21, Leicester–Fulham U21… Pas de stars PL titulaire type.</div></div>
+<div class="c">
+<div class="nm">Pas de C1 / C3 / Liga / L1 hommes</div>
+<div class="st">Paralysie FIFA + C1 féminine. Clubs hommes : prochaine C1 13–14 oct. Ligue 1 9 oct (Lens–Lyon).</div>
+</div>
+<div class="c">
+<div class="nm">Lyon F — Chelsea F</div>
+<div class="st">C1 féminine MD2. Aussi Benfica F — Bayern F. 18h45 : Roma F–Barça F, Paris FC F–Arsenal F, Häcken F–Juve F (déjà lancés / finis selon l’heure).</div>
+<div class="h">21h / 22h</div>
+</div>
+<div class="c">
+<div class="nm">Argentine — Bolivie</div>
+<div class="st">Amical Córdoba 21h ARG = 02h Paris. Messi ABSENT (retraite internationale, adieu le 6 oct vs Bénin). Nico Paz à la création. N°10 non attribué.</div>
+<div class="h">02h00 jeudi</div>
+</div>
 </section>
 <section class="sec" id="b">
-<h1>Hockey</h1>
-<div class="c"><div class="nm">KHL 19h30 Moscou (18h30 Paris)</div><div class="st">Dynamo Moscou — Barys · Shanghai Dragons — Avtomobilist · Torpedo — Avangard. Scores vers 1-1 / 1-0 / 0-0 en cours selon live.</div></div>
-<div class="c"><div class="nm">NHL présaison CE SOIR</div><div class="st">01h PHI–BOS · DET–PIT · NYI–NYR · CBJ–BUF · FLA–CAR<br>02h EDM–Winnipeg · Tampa–Nashville<br>03h Vancouver–Calgary<br>04h Utah–LA · Vegas–San Jose</div></div>
+<h1>Ligue des nations</h1>
+<div class="c"><div class="nm">Hier 29 sept</div><div class="st">Espagne–Croatie · Tchéquie–Angleterre · Écosse–Suisse. Yamal avait marqué à Wembley le 26.</div></div>
+<div class="c"><div class="nm">Ven 2 oct 20h45</div><div class="st">France — Italie · Belgique — Turquie · Pologne — Roumanie · Hongrie — Géorgie</div></div>
+<div class="c"><div class="nm">Sam 3 oct</div><div class="st">Espagne–Tchéquie 20h45 · Argentine–Burkina 21h ARG</div></div>
+<div class="c"><div class="nm">Mar 6 oct</div><div class="st">Croatie–Espagne · Messi adieu vs Bénin (Monumental)</div></div>
 </section>
 <section class="sec" id="c">
-<h1>Week-end passé (vérif)</h1>
-<div class="c"><div class="nm">Barça 7-2 Racing (16) puis 3-1 à Sevilla (19)</div><div class="st">Raphinha en tête Liga (~12 buts). Yamal aussi. Gordon toujours top passeur club.</div></div>
-<div class="c"><div class="nm">Atlético 2-1 Real (20 sept)</div><div class="st">Mbappé / Vinicius côté Real — défaite derby.</div></div>
-<div class="c"><div class="nm">OM 1-2 PSG (20 sept)</div><div class="st">Ferran Torres 66’ · Marquinhos 74’ · Gomes 72’ OM.</div></div>
-<div class="c"><div class="nm">Lyon 4-0 Rennes (19)</div><div class="st">Nuamah doublé · Athekame · Tolisso.</div></div>
-<div class="c"><div class="nm">Monaco 2-1 Lens (18)</div></div>
+<h1>Déjà joué (clubs)</h1>
+<div class="c"><div class="nm">C1 hommes MD1 (8–10 sept)</div><div class="st">Barça 5-1 Feyenoord (Raphinha 2, Adeyemi, Yamal, Jesus) · United 4-0 Sabah · Dortmund 3-2 Villarreal · City 2-0 Porto · Real 2-1 Inter</div></div>
+<div class="c"><div class="nm">Liga récente</div><div class="st">Barça 7-2 Racing · Barça 3-1 Sevilla · Atlético 2-1 Real. Raphinha leader buts Liga.</div></div>
+<div class="c"><div class="nm">Ligue 1</div><div class="st">OM 1-2 PSG (Torres, Marquinhos) · Lyon 4-0 Rennes · Monaco 2-1 Lens</div></div>
 </section>
 <section class="sec" id="d">
-<h1>Ensuite</h1>
-<div class="c"><div class="nm">Mer 23 C1 féminine</div><div class="st">Barça F — Paris FC F 21h · Servette — Lyon F · Chelsea F.</div></div>
-<div class="c"><div class="nm">Ligue 1 hommes</div><div class="st">Trou international / calendrier : prochaine 6e j. ven. 9 oct Lens–Lyon 20h45 · sam. PSG–Le Mans · Monaco–Toulouse · dim. Troyes–OM.</div></div>
-<div class="c"><div class="nm">C1 hommes MD2</div><div class="st">13–14 octobre.</div></div>
+<h1>Calendrier clubs</h1>
+<div class="c"><div class="nm">Ven 9 oct · Ligue 1</div><div class="st">Lens–Lyon 20h45 · sam. PSG–Le Mans, Monaco–Toulouse · dim. Troyes–OM</div></div>
+<div class="c"><div class="nm">13–14 oct · C1 hommes MD2</div></div>
+<div class="c"><div class="st"><a href="https://www.flashscore.fr" target="_blank">Flashscore live</a></div></div>
 </section>
 </main>
 <script>
 document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
 document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));
 document.querySelectorAll('.sec').forEach(x=>x.classList.remove('on'));
-t.classList.add('on');document.getElementById(t.dataset.s).classList.add('on');
+t.classList.add('on');
+document.getElementById(t.dataset.s).classList.add('on');
 });
-</script></body></html>
+</script>
+</body></html>
