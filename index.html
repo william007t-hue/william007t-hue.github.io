@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Je prends 30 sept</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Je prends</title>
 <style>
+:root{
+  --bg:#06080b;
+  --card:#121922;
+  --line:#243041;
+  --mute:#8b9bb4;
+  --txt:#f4f7fa;
+  --mint:#00d4aa;
+  --gold:#f5c15d;
+}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:system-ui;background:#07090c;color:#f2f5f8}
-.top{position:sticky;top:0;background:#05070a;padding:8px;z-index:9;border-bottom:1px solid #243041}
-.tabs{display:flex;gap:4px;overflow-x:auto}
-.tab{border:1px solid #243041;background:0;color:#8b9bb4;font-weight:800;font-size:11px;padding:6px 10px;border-radius:99px;white-space:nowrap}
-.tab.on{background:#00d4aa;color:#06110e}
-.w{max-width:760px;margin:0 auto;padding:14px}
-.k{color:#fbbf24;font-size:10px;font-weight:800}
-h1{font-size:22px;margin:6px 0 10px}
-.c{background:#141c26;border:1px solid #243041;border-radius:14px;padding:12px;margin:0 0 8px}
-.lab{font-size:9px;font-weight:800;color:#fbbf24;letter-spacing:.05em}
-.nm{font-size:17px;font-weight:900}
-.st{font-size:13px;color:#8b9bb4;margin-top:3px;line-height:1.4}
-.h{color:#00d4aa;font-weight:900;margin-top:6px}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--txt);line-height:1.35;-webkit-font-smoothing:antialiased}
+.top{position:sticky;top:0;z-index:20;background:rgba(6,8,11,.92);backdrop-filter:blur(12px);padding:10px 12px 8px;border-bottom:1px solid var(--line)}
+.tabs{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;border:1px solid var(--line);background:#0c1116;color:var(--mute);font-weight:800;font-size:12px;padding:8px 14px;border-radius:999px}
+.tab.on{background:var(--mint);color:#04110d;border-color:var(--mint)}
+.w{max-width:680px;margin:0 auto;padding:16px 14px 40px}
+.k{color:var(--gold);font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+h1{font-size:28px;letter-spacing:-.03em;margin:6px 0 16px}
+.c{background:linear-gradient(180deg,#161e28,#10171f);border:1px solid var(--line);border-radius:18px;padding:14px 14px 12px;margin:0 0 10px}
+.row{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.lab{font-size:10px;font-weight:800;color:var(--gold);letter-spacing:.06em}
+.badge{font-size:10px;font-weight:800;background:#0c1116;border:1px solid var(--line);color:var(--mint);padding:4px 8px;border-radius:999px;white-space:nowrap}
+.nm{font-size:20px;font-weight:900;letter-spacing:-.02em;margin-top:4px}
+.st{font-size:13px;color:var(--mute);margin-top:6px}
+.h{display:inline-block;margin-top:10px;background:#08241d;color:var(--mint);font-weight:800;font-size:13px;padding:6px 10px;border-radius:999px}
 .sec{display:none}.sec.on{display:block}
-</style></head>
+.foot{font-size:12px;color:#66758a;margin-top:18px;text-align:center}
+</style>
+</head>
 <body>
 <div class="top"><div class="tabs">
 <button class="tab on" data-s="p">Je prends</button>
@@ -29,48 +44,54 @@ h1{font-size:22px;margin:6px 0 10px}
 </div></div>
 <main class="w">
 <section class="sec on" id="p">
-<div class="k">30 SEPT 21H · L1 BUTEUR · L2 PASSEUR / POINT</div>
-<h1>Ce soir je prends</h1>
+<div class="k">Mer 30 sept · saison NHL ouverte</div>
+<h1>Je prends</h1>
 <div class="c">
-<div class="lab">01H30 · PIT @ PHI</div>
-<div class="nm">Crosby anytime</div>
-<div class="st">L1 : Crosby — Rakell — Robertson. L2 PHI : Zegras / Michkov / Tippett / Konecny. Rust blessé. Silovs gardien PIT. Vladar PHI.</div>
-<div class="h">Crosby + Rakell / Michkov</div>
+<div class="row"><div class="lab">PIT @ PHI</div><span class="badge">01h30</span></div>
+<div class="nm">Crosby</div>
+<div class="st">Ligne 1 Robertson–Crosby–Rakell. Rust blessé. Face Zegras / Michkov / Tippett.</div>
+<div class="h">Crosby · Rakell · Michkov</div>
 </div>
 <div class="c">
-<div class="lab">01H30 · NYI @ TOR</div>
-<div class="nm">Nylander (2 buts hier vs MTL)</div>
-<div class="st">Toronto 0-1. Matthews + Nylander. Islanders : Schaefer / Heineman props.</div>
-<div class="h">Nylander / Matthews</div>
+<div class="row"><div class="lab">NYI @ TOR</div><span class="badge">01h30</span></div>
+<div class="nm">Nylander</div>
+<div class="st">2 buts hier vs Montréal. Toronto 0-1. Matthews aussi.</div>
+<div class="h">Nylander · Matthews</div>
 </div>
 <div class="c">
-<div class="lab">04H00 · LA @ COL</div>
-<div class="nm">MacKinnon · Kempe</div>
-<div class="st">Colorado gros favori. Makar derrière.</div>
+<div class="row"><div class="lab">LA @ COL</div><span class="badge">04h00</span></div>
+<div class="nm">MacKinnon</div>
+<div class="st">Colorado favori. Kempe côté Kings. Makar derrière.</div>
+<div class="h">MacKinnon · Kempe</div>
 </div>
 <div class="c">
-<div class="lab">VEN 2 OCT 20H45 · FRANCE — ITALIE</div>
-<div class="nm">Olise / Dembélé · Mbappé doute</div>
-<div class="st">Zidane 2/2. Olise but 88’ vs Belgique. Mbappé genou gauche (but vs Turquie) rentré au Real — pas titulaire Belgique. Italie 4-1 Turquie (Mancini).</div>
+<div class="row"><div class="lab">FRANCE — ITALIE</div><span class="badge">Ven 20h45</span></div>
+<div class="nm">Olise</div>
+<div class="st">But 88’ vs Belgique. Mbappé doute genou. Zidane 2/2. Italie 4-1 Turquie.</div>
+<div class="h">Olise · Dembélé</div>
 </div>
 </section>
 <section class="sec" id="h">
-<h1>Compos type NHL</h1>
-<div class="c"><div class="nm">Penguins</div><div class="st">Robertson–Crosby–Rakell · Chinakhov–Novak–Malkin · Karlsson / Letang. Rust out. Silovs.</div></div>
-<div class="c"><div class="nm">Flyers</div><div class="st">Tippett–Zegras–Martone · Foerster–Dvorak–Konecny · Bump–Cates–Michkov. Vladar.</div></div>
-<div class="c"><div class="nm">Hier</div><div class="st">FLA 1-0 CAR OT · MTL 3-2 TOR · BOS 3-0 NYR · VAN 6-5 EDM OT · VGK 5-2 CHI</div></div>
+<div class="k">Compos projetées NHL.com</div>
+<h1>NHL XI</h1>
+<div class="c"><div class="nm">Penguins</div><div class="st">Robertson–Crosby–Rakell<br>Chinakhov–Novak–Malkin<br>Karlsson / Letang · Silovs · Rust out</div></div>
+<div class="c"><div class="nm">Flyers</div><div class="st">Tippett–Zegras–Martone<br>Foerster–Dvorak–Konecny<br>Bump–Cates–Michkov · Vladar</div></div>
+<div class="c"><div class="nm">Ouverture 29 sept</div><div class="st">FLA 1-0 CAR OT · MTL 3-2 TOR · BOS 3-0 NYR · VAN 6-5 EDM OT · VGK 5-2 CHI</div></div>
 </section>
 <section class="sec" id="k">
+<div class="k">Russie</div>
 <h1>KHL</h1>
-<div class="c"><div class="st">Avtomobilist 3-1 Lada · Ak Bars 3-1 Barys · Loko–Sibir · Shanghai–Magnitka · Spartak–Traktor · Sotchi–Salavat</div></div>
-<div class="c"><div class="nm">1er oct 18h30 Paris</div><div class="st">Dynamo Moscou–Torpedo · Severstal–Admiral · Minsk–CSKA</div></div>
+<div class="c"><div class="nm">Aujourd’hui</div><div class="st">Avtomobilist 3-1 Lada · Ak Bars 3-1 Barys · Loko–Sibir · Shanghai–Magnitka · Spartak–Traktor · Sotchi–Salavat</div></div>
+<div class="c"><div class="row"><div class="nm">Demain</div><span class="badge">18h30</span></div><div class="st">Dynamo Moscou–Torpedo · Severstal–Admiral · Minsk–CSKA</div></div>
 </section>
 <section class="sec" id="f">
+<div class="k">Coupe FIFA</div>
 <h1>Foot</h1>
-<div class="c"><div class="nm">Pas de C1 hommes ce soir</div><div class="st">C1 F Lyon–Chelsea / Benfica–Bayern. Argentine–Bolivie 02h sans Messi. Adieu Messi 6 oct vs Bénin.</div></div>
-<div class="c"><div class="nm">Ven 2 · France–Italie Stade de France</div></div>
-<div class="c"><div class="nm">Ven 9 · L1 Lens–Lyon · 13–14 oct C1 hommes</div></div>
+<div class="c"><div class="nm">Pas de C1 hommes</div><div class="st">C1 F Lyon–Chelsea / Benfica–Bayern. Argentine–Bolivie 02h sans Messi.</div></div>
+<div class="c"><div class="nm">Ven 2 · France–Italie</div><div class="st">Stade de France 20h45</div></div>
+<div class="c"><div class="nm">Ven 9 · L1 Lens–Lyon</div><div class="st">C1 hommes 13–14 oct · Messi adieu 6 oct vs Bénin</div></div>
 </section>
+<p class="foot">william007t-hue.github.io</p>
 </main>
 <script>
 document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
@@ -79,4 +100,5 @@ document.querySelectorAll('.sec').forEach(x=>x.classList.remove('on'));
 t.classList.add('on');
 document.getElementById(t.dataset.s).classList.add('on');
 });
-</script></body></html>
+</script>
+</body></html>
