@@ -1,75 +1,75 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>30 sept NHL</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Je prends 30 sept</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:system-ui;background:#07090c;color:#f2f5f8}
-.top{position:sticky;top:0;background:#05070a;padding:8px;border-bottom:1px solid #243041;z-index:9}
+.top{position:sticky;top:0;background:#05070a;padding:8px;z-index:9;border-bottom:1px solid #243041}
 .tabs{display:flex;gap:4px;overflow-x:auto}
 .tab{border:1px solid #243041;background:0;color:#8b9bb4;font-weight:800;font-size:11px;padding:6px 10px;border-radius:99px;white-space:nowrap}
 .tab.on{background:#00d4aa;color:#06110e}
 .w{max-width:760px;margin:0 auto;padding:14px}
 .k{color:#fbbf24;font-size:10px;font-weight:800}
-h1{font-size:22px;margin:6px 0 12px}
+h1{font-size:22px;margin:6px 0 10px}
 .c{background:#141c26;border:1px solid #243041;border-radius:14px;padding:12px;margin:0 0 8px}
+.lab{font-size:9px;font-weight:800;color:#fbbf24;letter-spacing:.05em}
 .nm{font-size:17px;font-weight:900}
-.st{font-size:13px;color:#8b9bb4;margin-top:4px;line-height:1.4}
+.st{font-size:13px;color:#8b9bb4;margin-top:3px;line-height:1.4}
 .h{color:#00d4aa;font-weight:900;margin-top:6px}
 .sec{display:none}.sec.on{display:block}
 </style></head>
 <body>
 <div class="top"><div class="tabs">
-<button class="tab on" data-s="h">NHL</button>
+<button class="tab on" data-s="p">Je prends</button>
+<button class="tab" data-s="h">NHL XI</button>
 <button class="tab" data-s="k">KHL</button>
-<button class="tab" data-s="a">Foot ce soir</button>
-<button class="tab" data-s="b">Sélections</button>
+<button class="tab" data-s="f">Foot</button>
 </div></div>
 <main class="w">
-<section class="sec on" id="h">
-<div class="k">SAISON RÉGULIÈRE 2026-27 · OUVERTE MARDI 29 SEPT · PLUS PRÉSAISON</div>
-<h1>NHL ce soir</h1>
+<section class="sec on" id="p">
+<div class="k">30 SEPT 21H · L1 BUTEUR · L2 PASSEUR / POINT</div>
+<h1>Ce soir je prends</h1>
 <div class="c">
-<div class="nm">Penguins @ Flyers</div>
-<div class="st">TNT. PHI favori. Crosby / Flyers à Philadelphie.</div>
-<div class="h">01h30 jeudi (Paris)</div>
+<div class="lab">01H30 · PIT @ PHI</div>
+<div class="nm">Crosby anytime</div>
+<div class="st">L1 : Crosby — Rakell — Robertson. L2 PHI : Zegras / Michkov / Tippett / Konecny. Rust blessé. Silovs gardien PIT. Vladar PHI.</div>
+<div class="h">Crosby + Rakell / Michkov</div>
 </div>
 <div class="c">
-<div class="nm">Islanders @ Maple Leafs</div>
-<div class="st">Toronto Scotiabank. Matthews / Nylander côté Leafs. Canadiens ont battu Toronto 3-2 hier.</div>
-<div class="h">01h30 jeudi</div>
+<div class="lab">01H30 · NYI @ TOR</div>
+<div class="nm">Nylander (2 buts hier vs MTL)</div>
+<div class="st">Toronto 0-1. Matthews + Nylander. Islanders : Schaefer / Heineman props.</div>
+<div class="h">Nylander / Matthews</div>
 </div>
 <div class="c">
-<div class="nm">Kings @ Avalanche</div>
-<div class="st">Ball Arena Denver. MacKinnon / Makar. COL favori fort.</div>
-<div class="h">04h00 jeudi</div>
+<div class="lab">04H00 · LA @ COL</div>
+<div class="nm">MacKinnon · Kempe</div>
+<div class="st">Colorado gros favori. Makar derrière.</div>
 </div>
 <div class="c">
-<div class="nm">Résultats ouverture 29 sept</div>
-<div class="st">Florida 1-0 Carolina OT · Montréal 3-2 Toronto · Boston 3-0 Rangers · Vancouver 6-5 Edmonton OT · Vegas 5-2 Chicago (Eichel 700 pts)</div>
+<div class="lab">VEN 2 OCT 20H45 · FRANCE — ITALIE</div>
+<div class="nm">Olise / Dembélé · Mbappé doute</div>
+<div class="st">Zidane 2/2. Olise but 88’ vs Belgique. Mbappé genou gauche (but vs Turquie) rentré au Real — pas titulaire Belgique. Italie 4-1 Turquie (Mancini).</div>
 </div>
-<div class="c">
-<div class="nm">Jeudi 1er oct</div>
-<div class="st">Flyers @ Devils 01h · Sabres @ Blue Jackets 01h</div>
-</div>
+</section>
+<section class="sec" id="h">
+<h1>Compos type NHL</h1>
+<div class="c"><div class="nm">Penguins</div><div class="st">Robertson–Crosby–Rakell · Chinakhov–Novak–Malkin · Karlsson / Letang. Rust out. Silovs.</div></div>
+<div class="c"><div class="nm">Flyers</div><div class="st">Tippett–Zegras–Martone · Foerster–Dvorak–Konecny · Bump–Cates–Michkov. Vladar.</div></div>
+<div class="c"><div class="nm">Hier</div><div class="st">FLA 1-0 CAR OT · MTL 3-2 TOR · BOS 3-0 NYR · VAN 6-5 EDM OT · VGK 5-2 CHI</div></div>
 </section>
 <section class="sec" id="k">
-<h1>KHL 30 sept</h1>
-<div class="c"><div class="nm">Déjà joué / live Russie</div>
-<div class="st">Avtomobilist 3-1 Lada · Ak Bars 3-1 Barys · Loko Yaroslavl–Sibir · Shanghai–Magnitka · Spartak–Traktor · Sotchi–Salavat</div></div>
-<div class="c"><div class="nm">1er oct 19h30 Moscou = 18h30 Paris</div>
-<div class="st">Dynamo Moscou — Torpedo · Severstal — Admiral · Dynamo Minsk — CSKA</div></div>
+<h1>KHL</h1>
+<div class="c"><div class="st">Avtomobilist 3-1 Lada · Ak Bars 3-1 Barys · Loko–Sibir · Shanghai–Magnitka · Spartak–Traktor · Sotchi–Salavat</div></div>
+<div class="c"><div class="nm">1er oct 18h30 Paris</div><div class="st">Dynamo Moscou–Torpedo · Severstal–Admiral · Minsk–CSKA</div></div>
 </section>
-<section class="sec" id="a">
-<h1>Foot ce soir</h1>
-<div class="c"><div class="nm">Pas de C1 hommes</div><div class="st">Lyon F–Chelsea F et Benfica F–Bayern F (C1 F). Argentine–Bolivie 02h, Messi absent.</div></div>
-</section>
-<section class="sec" id="b">
-<h1>Sélections</h1>
-<div class="c"><div class="nm">Ven 2 oct 20h45</div><div class="st">France–Italie · Belgique–Turquie</div></div>
-<div class="c"><div class="nm">6 oct</div><div class="st">Adieu Messi vs Bénin</div></div>
+<section class="sec" id="f">
+<h1>Foot</h1>
+<div class="c"><div class="nm">Pas de C1 hommes ce soir</div><div class="st">C1 F Lyon–Chelsea / Benfica–Bayern. Argentine–Bolivie 02h sans Messi. Adieu Messi 6 oct vs Bénin.</div></div>
+<div class="c"><div class="nm">Ven 2 · France–Italie Stade de France</div></div>
+<div class="c"><div class="nm">Ven 9 · L1 Lens–Lyon · 13–14 oct C1 hommes</div></div>
 </section>
 </main>
 <script>
@@ -79,5 +79,4 @@ document.querySelectorAll('.sec').forEach(x=>x.classList.remove('on'));
 t.classList.add('on');
 document.getElementById(t.dataset.s).classList.add('on');
 });
-</script>
-</body></html>
+</script></body></html>
